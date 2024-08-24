@@ -41,9 +41,18 @@
 }
 
 body {
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0,0,0,1);
     font-family: "PPEditorialNew";
     font-weight: lighter;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgba(0,0,0,0.3);
 }
 
 .container {
@@ -61,11 +70,11 @@ body {
     margin-right: auto;
 }
 
-/*
 .container.outer {
-    box-shadow: 0 0 100px rgba(238, 130, 238, 0.3);
+    /*box-shadow: 0 0 100px rgba(238, 130, 238, 0.3);*/
+    width: 50%;
 }
-*/
+
 .nav-pills .nav-link.active {
     background-color: white;
     color: black;
@@ -85,15 +94,20 @@ body {
 
 
 .gallery-item h3 {
-    font-size: 24px;
+    font-size: 20px;
+    /*
+    font-family: "Work Sans";
+    font-weight: 600;
+    */
     font-weight: lighter;
     font-style: italic;
     margin: 0;
     margin-bottom: 10px;
+    line-height: 100%;
 }
 
 .gallery-item h6 {
-    font-size: 13px;
+    font-size: 10px;
     font-family: "Work Sans";
     margin:0;
     margin-top: 5px;
@@ -107,6 +121,7 @@ body {
     font-size: 10px;
     margin: 0;
     text-align: justify;
+    line-height: 120%;
 }
 
 
@@ -134,7 +149,7 @@ img.cover {
     aspect-ratio: 1/1;
     object-fit: cover;
     filter:grayscale(100%);
-    opacity: 70%;
+    opacity: 50%;
     transition: 0.3s;
 }
 
@@ -144,7 +159,6 @@ img.cover:hover {
     transform: scale(1.05) translateY(-10px);
     z-index: 1;
 }
-
 
 .new img {
     filter: grayscale(0%);
