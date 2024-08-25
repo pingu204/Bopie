@@ -28,7 +28,7 @@
 
 @font-face {
     font-family: "PPEditorialNew";
-    src: url("fonts/PPEditorialNew-Ultrabold.otf") format("opentype");
+    src: url("fonts/PPEditorialNew-Regular.otf") format("opentype");
     font-weight: bold;
     font-style: normal;
 }
@@ -85,6 +85,30 @@ a:hover {
     color: black;
     border-width: 1px;
     border-color: black;
+}
+
+.nav-pills .nav-link.active:hover {
+    background-color: black;
+    color: white;
+}
+
+.overview h2 {
+    font-size: 25px;
+    line-height: 70%;
+    margin: 0;
+}
+
+.overview p {
+    font-size: 14px;
+    line-height: 120%;
+    margin:0;
+}
+
+.overview img {
+    width: 300px;
+    height: auto;
+    float: right;
+    margin-left: 10px;
 }
 
 .gallery {
@@ -183,6 +207,11 @@ img.logo {
     margin-left: auto;
     margin-right: auto;
     animation: logoFade 3s ease infinite;
+}
+
+img.logo:hover {
+    animation: none;
+    opacity: 1;
 }
 
 @keyframes logoFade {
