@@ -78,3 +78,45 @@ for (item of cards) {
         modalContainer.appendChild(modal);
     }
 }
+
+var word_counter = 0;   // tracks which word is to be displayed
+var i = 0;              // tracks number of letters in the display
+var forward = true;
+var speed = 50;
+
+typeWrite();
+
+function sleep(ms) { // obtained from https://www.sitepoint.com/delay-sleep-pause-wait/
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+  
+async function typeWrite() {
+    element = document.getElementById("typing")
+
+    if (forward) {
+        element.innerHTML += strings[word_counter].charAt(i);
+        i++;
+        if (strings[word_counter].length == i) { // completely typed
+            forward = !forward;
+            speed = 50;
+            await sleep(1000);
+        }
+    }
+    else {
+        element.innerHTML = element.innerText.slice(0, -1);
+        i--;
+        if (i == 0) { // completely erased
+            forward = true;
+            word_counter = (word_counter + 1) % strings.length;
+            speed = 50;
+        }
+    }
+    setTimeout(typeWrite, speed);
+    speed *= 0.8;
+}
+
+// Loading Screen
+
+let preloader = document.getElementById("preloader")
+
+setTimeout(() => {preloader.style.display = "none";}, 5000);

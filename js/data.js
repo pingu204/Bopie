@@ -134,3 +134,13 @@ var cards = [
         ]
     }
 ]
+
+var strings = [
+    "Dedma muna rito kase inaayos pa!",
+    "Erm...",
+    "Nakita mo naman yung sinabi ko diba?",
+    "(Don't) Zoom this site kase masisira siya",
+    "Ewan ko kung kelan ko maaayos",
+    "Luh, ba't andito ka pa?",
+    "Layas!"
+]
