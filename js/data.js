@@ -63,7 +63,7 @@ var cards = [
         "new" : false,
         "description" : "The eight semi-finalists of the Miss Sim Universe 2024 competition strut their way to the Swimsuit Round, showcasing the bedazzled swimsuit designed by MSSIMS and heels sponsored by Astya.",
         "date" : "AUGUST 2024",
-        "cover" : "./images/2024/MSU_Swimsuit/swim-cover.jpg",
+        "cover" : "./images/2024/MSU_Swimsuit/swim-Cover.jpg",
         "modalID" : "msuSwimsuit",
         "images" : [],
         "url" : "https://youtu.be/Rqi32rsisIA"
