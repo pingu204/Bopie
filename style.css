@@ -180,6 +180,12 @@ a:hover {
 
 .overview div.description {
     padding-right: 20px;
+    font-family: 'Work Sans';
+    font-weight: normal;
+}
+
+div.description p {
+    font-size: 8pt;
 }
 
 .overview div.before-and-after {
