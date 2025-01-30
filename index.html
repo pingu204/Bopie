@@ -11,57 +11,63 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     
 </head>
 <body>
-    <div id="preloader" class="preloader">
-    </div>
+    <!-- <div id="preloader" class="preloader">
+    </div> -->
     <div class="logo">
-        <img src="images/logo_white.png" class="logo center">
+        <img src="images/star_white.png" class="logo center">
     </div>
     <div class="container p-4 outer">
+        <div class="row intro">
+            <h1 id="typing-intro"> </h1>
+            <p>A full-Stack Overflow <i class="bi-stack-overflow"></i> programmer by day, a sleep-deprived penguin with occasional back pains at night. I created this website to collate some of my creative outlets, which always manage to keep me sane in these trying times—trying times!?</p>
+            <p>Check out some of my works below!</p>
+        </div>
+        <hr style="width:20%; margin:auto; padding:20px;">
         <nav class="navbar navbar-expand-lg justify-content-center">
-            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills flex-sm-row flex-column" id="pills-tab" role="tablist">
                 <li class="nav-item" >
-                    <button class="btn nav-link" id="pills-home-tab" type="button" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab">Renders</button>
+                    <button class="btn nav-link active" id="pills-home-tab" type="button" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab">Renders</button>
                 </li>
                 <li class="nav-item" >
-                    <button class="btn nav-link active" id="pills-profiles-tab" type="button" data-bs-toggle="pill" data-bs-target="#pills-profiles" role="tab">Graphic Design</button>
+                    <button class="btn nav-link" id="pills-profiles-tab" type="button" data-bs-toggle="pill" data-bs-target="#pills-profiles" role="tab">Graphic Design</button>
                 </li>
                 <li class="nav-item" >
-                    <button class="btn nav-link disabled" id="pills-about-tab" type="button" data-bs-toggle="pill" data-bs-target="#pills-about" role="tab">About Me</button>
+                    <button class="btn nav-link disabled" id="pills-about-tab" type="button" data-bs-toggle="pill" data-bs-target="#pills-about" role="tab">Programming</button>
                 </li>
             </ul>
         </nav>
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade" id="pills-home" role="tabpanel">
-                <div class="container p-7 gallery">
-                    <div class="row" id="cardContainer"></div>
-                </div>
-                <div class="container p-7 overview">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
+                <div class="row gallery" id="cardContainer"></div>
+                <div class="row">
                     <h2>How are these made?</h2>
-                    <hr>
-                    <img src="images/lazy.gif">
-                    <p>As an avid The Sims™️ 4 player, I picked up the hobby of manipulating in-game screenshots and transforming them into photoshoots or stills.</p>
-                    <br>
-                    <p>The core of renders relies on the game's <a href="https://sims4studio.com/thread/2617/andrews-studio">pose player mod</a>, which is used to pose and/or animate sims in the game. Perhaps the bulk of beautifying these renders goes to the post-processing, in which I use Adobe Photoshop. Meanwhile, I use CapCut in editing videos.</p>
-                    <br>
-                    <p>Here's a before-and-after of one of my edits!</p>
+                </div>
+                <div class="row overview">
+                    <div class="description">
+                        <p>As an avid The Sims™️ 4 player, I picked up the hobby of manipulating in-game screenshots and transforming them into photoshoots or stills.</p>
+                        <br>
+                        <p>The core of renders relies on the game's <a href="https://sims4studio.com/thread/2617/andrews-studio">pose player mod</a>, which is used to pose and/or animate sims in the game. Perhaps the bulk of beautifying these renders goes to the post-processing, in which I use Adobe Photoshop. Meanwhile, I use CapCut in editing videos.</p>
+                        <br>
+                        <p>Here's a before-and-after of one of my edits!</p>
+                    </div>
+                    <div class="before-and-after">
+                    </div>
+                    
+                    
                 </div>
             </div>
-            <div class="tab-pane fade show active" id="pills-profiles" role="tabpanel">
-                <div class="container p-7 gallery">
-                    <div class="typing">
-                        <h2 id="typing"></h2>
-                    </div>
-                    <div class="row" id="cardContainer">
-                        <div class="col-sm-4 gallery-item card"><div class="loading card"></div></div>
-                        <div class="col-sm-4 gallery-item card"><div class="loading card"></div></div>
-                        <div class="col-sm-4 gallery-item card"><div class="loading card"></div></div>
-                        <div class="col-sm-4 gallery-item card"><div class="loading card"></div></div>
-                        <div class="col-sm-4 gallery-item card"><div class="loading card"></div></div>
-                        <div class="col-sm-4 gallery-item card"><div class="loading card"></div></div>
-                    </div>
+            <div class="tab-pane fade" id="pills-profiles" role="tabpanel">
+                <div class="row gallery" id="cardContainer">
+                    <div class="gallery-item card"><div class="loading card"></div></div>
+                    <div class="gallery-item card"><div class="loading card"></div></div>
+                    <div class="gallery-item card"><div class="loading card"></div></div>
+                    <div class="gallery-item card"><div class="loading card"></div></div>
+                    <div class="gallery-item card"><div class="loading card"></div></div>
+                    <div class="gallery-item card"><div class="loading card"></div></div>
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-about" role="tabpanel">About</div>
@@ -69,34 +75,36 @@
         </div>
     </div>
     <hr style="border: 0.5px solid rgb(255,255,255,0.3)">
-    <div class="container footer">
-        <div class="row">
-            <div class="col-sm-6 left-align connect">
+    <div class="footer">
+        <div class="row contact">
+            <div class="left-align connect">
                 <h4>Connect With</h4>
                 <img src="images/logo_white.png"><br>
-                <a href="mailto:jbseda@up.edu.ph" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.instagram.com/jopeth.psd/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/pingu204" target="_blank"><i class="fa-brands fa-github"></i></a>
+                
             </div>
-            <div class="col-sm-6 right-align">
-                <div class="power bottom">
-                    <p>
-                        Powered by
-                        <i class="fa-brands fa-bootstrap"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-js"></i>
-                    </p>
-                    <p>View on <strong><a style="font-family: 'Work Sans';" href="https://github.com/pingu204/Bopie" target="_blank">GitHub <i class="bi bi-arrow-up-right"></i></a></strong></p>
-                    <p>Copyright © Bopie 2024. All Rights Reserved.</p>
+            <div class="right-align">
+                <p>
+                    Powered by
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                </p>
+                <p>View on <strong><a style="font-family: 'Work Sans';" href="https://github.com/pingu204/Bopie" target="_blank">GitHub <i class="bi bi-arrow-up-right"></i></a></strong></p>
+                <div class="socials">
+                    <a href="mailto:jbseda@up.edu.ph" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/jopeth.psd/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/pingu204" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
+                <!-- <p>Copyright © Bopie 2025. All Rights Reserved.</p> -->
             </div>
         </div>
-        <div class="row">
-            
+        <div class="row copyright">
+            <p>Copyright © Bopie 2025. All Rights Reserved.</p>
         </div>
+    </div>
     </div>
 </body>
 <script type="text/javascript" src="js/data.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>

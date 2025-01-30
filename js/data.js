@@ -1,7 +1,52 @@
 var cards = [
     {
-        "title" : "'New Woman'-Inspired Shoot",
+        "title" : "Regina Benitez is a Dazzling Emerald",
         "new" : true,
+        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
+        "date" : "JANUARY 2025",
+        "cover" : "./images/2025/Regina_Emerald/emerald.png",
+        "modalID" : "reginaEmerald",
+        "images" : [
+            "./images/2025/Regina_Emerald/emerald.png",
+            "./images/2025/Regina_Emerald/emerald_p.png",
+            "./images/2025/Regina_Emerald/emerald_1.png",
+            "./images/2025/Regina_Emerald/emerald_p1.png"
+        ],
+        "url" : null
+    },
+    {
+        "title" : "Beauty Headshots",
+        "new" : false,
+        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
+        "date" : "",
+        "cover" : "./images/2025/BeautyPortraits/maia_portrait.png",
+        "modalID" : "beautyHeadshots",
+        "images" : [
+            "./images/2025/BeautyPortraits/dahlia_crown.png",
+            "./images/2025/BeautyPortraits/nikola_crown.png",
+            "./images/2025/BeautyPortraits/regina.png",
+            "./images/2025/BeautyPortraits/maia_portrait.png"
+        ],
+        "url" : null
+    },
+    {
+        "title" : "Regina Benitez for 'MUGLER'",
+        "new" : false,
+        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
+        "date" : "JANUARY 2025",
+        "cover" : "./images/2025/Regina_Mugler/mugler.png",
+        "modalID" : "reginaMugler",
+        "images" : [
+            "./images/2025/Regina_Mugler/mugler.png",
+            "./images/2025/Regina_Mugler/mugler-1.png",
+            "./images/2025/Regina_Mugler/mugler-2.png",
+            "./images/2025/Regina_Mugler/mugler-3.png",
+        ],
+        "url" : null
+    },
+    {
+        "title" : "'New Woman'-Inspired Shoot",
+        "new" : false,
         "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
         "date" : "AUGUST 2024",
         "cover" : "./images/2024/Regina_NewWoman/new woman.png",
@@ -135,7 +180,7 @@ var cards = [
     }
 ]
 
-var strings = [
+var loading_strings = [
     "Dedma muna rito kase inaayos pa!",
     "Erm...",
     "Nakita mo naman yung sinabi ko diba?",
@@ -143,4 +188,12 @@ var strings = [
     "Ewan ko kung kelan ko maaayos",
     "Luh, ba't andito ka pa?",
     "Layas!"
+]
+
+var intro_strings = [
+    "Hi, I'm Bopie!",
+    "Kumusta, ako si Bopie!",
+    "안영! 나는 Bopie-입니다~",
+    "Hola, soy Bopie!",
+    "こんにちは、Bopie-です!"
 ]

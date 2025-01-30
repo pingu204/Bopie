@@ -1,9 +1,12 @@
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
 let cardContainer = document.getElementById("cardContainer")
 let modalContainer = document.getElementById("modalContainer");
 
 for (item of cards) {
     let card = document.createElement("div");
-    card.className = item.new ? "col-sm-4 gallery-item new card" : "col-sm-4 gallery-item card";
+    card.className = item.new ? "gallery-item new card" : "gallery-item card";
 
     let cover = document.createElement("img");
     cover.src = item.cover;
@@ -54,7 +57,7 @@ for (item of cards) {
 
     caption.appendChild(postDate);
     caption.appendChild(postTitle);
-    caption.appendChild(postDescription);
+    // caption.appendChild(postDescription);
 
     cardContainer.appendChild(card);
 
@@ -84,35 +87,49 @@ var i = 0;              // tracks number of letters in the display
 var forward = true;
 var speed = 50;
 
-typeWrite();
+goType("typing-intro", intro_strings);
 
 function sleep(ms) { // obtained from https://www.sitepoint.com/delay-sleep-pause-wait/
     return new Promise(resolve => setTimeout(resolve, ms));
 }
   
-async function typeWrite() {
-    element = document.getElementById("typing")
+async function goType(id, strings) {
 
-    if (forward) {
-        element.innerHTML += strings[word_counter].charAt(i);
-        i++;
-        if (strings[word_counter].length == i) { // completely typed
-            forward = !forward;
-            speed = 50;
-            await sleep(1000);
+    async function typeWrite() {
+        element = document.getElementById(id)
+    
+        if (forward) {
+            if (i==0) {
+                element.innerHTML = strings[word_counter].charAt(i);
+            }
+            else {
+                element.innerHTML += strings[word_counter].charAt(i);
+            }
+            
+            i++;
+            if (strings[word_counter].length == i) { // completely typed
+                forward = !forward;
+                speed = 50;
+                await sleep(1000);
+            }
         }
-    }
-    else {
-        element.innerHTML = element.innerText.slice(0, -1);
-        i--;
-        if (i == 0) { // completely erased
-            forward = true;
-            word_counter = (word_counter + 1) % strings.length;
-            speed = 50;
+        else {
+            if (i==1) {
+                forward = true;
+                word_counter = (word_counter + 1) % strings.length;
+                speed = 50;
+            }
+            else {
+                element.innerHTML = element.innerText.slice(0, i);
+            }
+    
+            i--;
         }
+        setTimeout(typeWrite, speed);
+        speed *= 0.95;
     }
-    setTimeout(typeWrite, speed);
-    speed *= 0.8;
+    
+    typeWrite();
 }
 
 // Loading Screen
