@@ -440,8 +440,9 @@ img.logo:hover {
 }
 
 .header {
+    height:100%;
+    width:100%;
     position:fixed;
-    padding: 20px;
 }
 
 .header button {
@@ -454,6 +455,9 @@ img.logo:hover {
     border-radius: 10px;
     font-family: 'Work Sans';
     font-size: 10pt;
+    right:0; bottom:0;
+    position:absolute;
+    margin: 30px;
 }
 
 .header button:hover {
