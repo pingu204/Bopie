@@ -55,7 +55,9 @@
 }
 
 body {
-    background-image: url('images/lazy.png');
+    background-image: 
+        linear-gradient(to bottom, rgb(0,0,0,0), rgb(0,0,0,1)),
+        url('images/lazy.png');
     background-repeat: no-repeat;
     background-size: 300%;
     background-color: rgba(0,0,0,1);
@@ -370,13 +372,17 @@ img.logo:hover {
     margin: 0;
 }
 
-@media only screen and (max-width:1500px) {
+@media only screen and (max-width:1000px) {
     .row.gallery, .row.contact, .row.overview {
         grid-template-columns: 1fr;
     }
 
     .row.contact {
         padding-top: 25px;
+    }
+
+    .header {
+        display: none;
     }
 
     /* .overview img {
@@ -427,4 +433,25 @@ img.logo:hover {
     font-family: 'Work Sans';
     font-weight: normal;
     font-size: 10pt;
+}
+
+.header {
+    position:fixed;
+    padding: 20px;
+}
+
+.header button {
+    background: none;
+    border-color: white;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-family: 'Work Sans';
+    font-size: 10pt;
+}
+
+.header button:hover {
+    opacity: 0.5;
 }

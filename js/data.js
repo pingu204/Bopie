@@ -1,6 +1,6 @@
-var cards = [
+var renderEntries = [
     {
-        "title" : "Regina Benitez is a Dazzling Emerald",
+        "title" : "Sampaguita-Inspired Photoshoot",
         "new" : true,
         "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
         "date" : "JANUARY 2025",
