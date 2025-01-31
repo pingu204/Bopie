@@ -180,6 +180,58 @@ var renderEntries = [
     }
 ]
 
+var designEntries = [
+    {
+        "title" : "UPD Computer Science Bootcamp 10.0 Merchandise",
+        "official" : true,
+        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
+        "date" : "JANUARY 2025",
+        "cover" : "./images/Designs/DCSMerch/cover.png",
+        "modalID" : "dcsMerch",
+        "images" : [
+            "./images/Designs/DCSMerch/mockup_white.png",
+            "./images/Designs/DCSMerch/mockup_isko.png",
+            "./images/Designs/DCSMerch/mockup_blurple.png",
+            "./images/Designs/DCSMerch/mockup_dcs.png"
+        ],
+        "url" : null,
+        "platforms": [
+            "illustrator"
+        ]
+    },
+    {
+        "title" : "PSHS-MC Senior Year Batch Shirt",
+        "official" : true,
+        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
+        "date" : "JANUARY 2025",
+        "cover" : "./images/Designs/G11BatchShirt/shirt.png",
+        "modalID" : "g11BatchShirt",
+        "images" : [
+            "./images/Designs/G11BatchShirt/shirt.png"
+        ],
+        "url" : null,
+        "platforms": [
+            "illustrator"
+        ]
+    },
+    {
+        "title" : "Leni-Kiko Jeepney Signs",
+        "official" : false,
+        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
+        "date" : "JANUARY 2025",
+        "cover" : "./images/Designs/LeniKiko/cover.png",
+        "modalID" : "leniKiko",
+        "images" : [
+            "./images/Designs/LeniKiko/cover.png"
+        ],
+        "url" : null,
+        "platforms": [
+            "photoshop",
+            "illustrator"
+        ]
+    }
+]
+
 var loading_strings = [
     "Dedma muna rito kase inaayos pa!",
     "Erm...",

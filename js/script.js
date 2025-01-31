@@ -1,7 +1,7 @@
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
-function generateCards(cards, containerID) {
+function generateCards(cards, containerID, type) {
     let cardContainer = document.getElementById(containerID)
     let modalContainer = document.getElementById("modalContainer");
 
@@ -22,21 +22,60 @@ function generateCards(cards, containerID) {
 
         card.appendChild(cover);
         card.appendChild(caption);
+        
+        switch(type) {
+            case "render":
+                let postDate = document.createElement("h6");
+                postDate.innerText = item.date + ' ';
+                if (item.date == "") {
+                    let ongoingBadge = document.createElement("span");
+                    ongoingBadge.innerText = "ONGOING";
+                    ongoingBadge.className = "badge ongoing";
+                    postDate.append(ongoingBadge)
+                }
+                if (item.new) {
+                    let newBadge = document.createElement("span");
+                    newBadge.innerText = "NEW";
+                    newBadge.className = "badge";
+                    postDate.appendChild(newBadge);
+                }
+                caption.appendChild(postDate);
+                break;
+            
+            case "design":
+                let postDetails = document.createElement("h6");
+                
+                let photoshopBadge = document.createElement("span");
+                photoshopBadge.className = "platform-icon skill-icons--photoshop";
+                
+                let illustratorBadge = document.createElement("span");
+                illustratorBadge.className = "platform-icon skill-icons--illustrator";
 
-        let postDate = document.createElement("h6");
-        postDate.innerText = item.date + ' ';
-        if (item.date == "") {
-            let ongoingBadge = document.createElement("span");
-            ongoingBadge.innerText = "ONGOING";
-            ongoingBadge.className = "badge ongoing";
-            postDate.append(ongoingBadge)
+                let indesignBadge = document.createElement("span");
+                indesignBadge.className = "platform-icon logos--adobe-indesign";
+                
+                if (item.platforms.includes("photoshop")){
+                    postDetails.appendChild(photoshopBadge);
+                }
+                if (item.platforms.includes("illustrator")){
+                    postDetails.appendChild(illustratorBadge);
+                }
+                if (item.platforms.includes("indesign")){
+                    postDetails.appendChild(indesignBadge);
+                }
+                
+                if (item.official) {
+                    let officialBadge = document.createElement("span");
+                    officialBadge.innerText = "OFFICIAL";
+                    officialBadge.className = "badge";
+                    
+                    postDetails.appendChild(document.createElement("br"))
+                    postDetails.appendChild(officialBadge);
+                }
+                caption.appendChild(postDetails);
+                break;
         }
-        if (item.new) {
-            let newBadge = document.createElement("span");
-            newBadge.innerText = "NEW";
-            newBadge.className = "badge";
-            postDate.appendChild(newBadge);
-        }
+        
 
         let postTitle = document.createElement("h3");
         postTitle.innerText = item.title;
@@ -56,7 +95,7 @@ function generateCards(cards, containerID) {
         let postDescription = document.createElement("p");
         postDescription.innerText = item.description;
 
-        caption.appendChild(postDate);
+        
         caption.appendChild(postTitle);
         // caption.appendChild(postDescription);
 
@@ -74,6 +113,9 @@ function generateCards(cards, containerID) {
                 let img = document.createElement("img");
                 img.src = url;
                 img.className = "modal-image";
+                
+                console.log(img.naturalHeight);
+                console.log(img.naturalWidth);
 
                 modalDialog.appendChild(img);
             }
@@ -84,7 +126,8 @@ function generateCards(cards, containerID) {
     }
 }
 
-generateCards(renderEntries, "rendersContainer");
+generateCards(renderEntries, "rendersContainer", "render");
+generateCards(designEntries, "designsContainer", "design");
 
 var word_counter = 0;   // tracks which word is to be displayed
 var i = 0;              // tracks number of letters in the display
