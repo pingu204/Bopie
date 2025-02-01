@@ -440,9 +440,11 @@ img.logo:hover {
 }
 
 .header {
-    height:100%;
+    height: 70%;
     width:100%;
     position:fixed;
+    margin-bottom: 0;
+    margin-right: 0;
 }
 
 .header button {
