@@ -372,6 +372,34 @@ img.logo:hover {
     margin: 0;
 }
 
+.header {
+    height: 70%;
+    width:100%;
+    position:fixed;
+    margin-bottom: 0;
+    margin-right: 0;
+    z-index: 100;
+}
+
+.header button {
+    background: none;
+    border-color: white;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-family: 'Work Sans';
+    font-size: 10pt;
+    right:0; bottom:0;
+    position:absolute;
+    margin: 30px;
+}
+
+.header button:hover {
+    opacity: 0.5;
+}
+
 @media only screen and (max-width:1000px) {
     .row.gallery, .row.contact, .row.overview {
         grid-template-columns: 1fr;
@@ -382,8 +410,16 @@ img.logo:hover {
     }
 
     .header {
-        display: none;
+        height: 85vh;
     }
+
+    .header button, .header button:hover {
+        color: white;
+        border-color: black;
+        background: black;
+        opacity: 1;
+    }
+    
 
     /* .overview img {
         width:100%;
@@ -439,32 +475,7 @@ img.logo:hover {
     font-size: 10pt;
 }
 
-.header {
-    height: 70%;
-    width:100%;
-    position:fixed;
-    margin-bottom: 0;
-    margin-right: 0;
-}
 
-.header button {
-    background: none;
-    border-color: white;
-    color: white;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
-    font-family: 'Work Sans';
-    font-size: 10pt;
-    right:0; bottom:0;
-    position:absolute;
-    margin: 30px;
-}
-
-.header button:hover {
-    opacity: 0.5;
-}
 
 .modal-dialog {
     max-width: 60vw;
