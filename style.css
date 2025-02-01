@@ -373,7 +373,7 @@ img.logo:hover {
 }
 
 .header {
-    height: 70%;
+    height: 10%;
     width:100%;
     position:fixed;
     margin-bottom: 0;
@@ -385,13 +385,11 @@ img.logo:hover {
     background: none;
     border-color: white;
     color: white;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 5px 10px 5px 10px;
     border-radius: 10px;
     font-family: 'Work Sans';
     font-size: 10pt;
-    right:0; bottom:0;
+    right:0; top:0;
     position:absolute;
     margin: 30px;
 }
@@ -410,15 +408,15 @@ img.logo:hover {
     }
 
     .header {
-        height: 85vh;
+        display: none;
     }
 
-    .header button, .header button:hover {
+    /* .header button, .header button:hover {
         color: white;
         border-color: black;
         background: black;
         opacity: 1;
-    }
+    } */
     
 
     /* .overview img {
