@@ -64,9 +64,9 @@ function generateCards(cards, containerID, type) {
                     postDetails.appendChild(indesignBadge);
                 }
                 
-                if (item.official) {
+                if (item.type != "") {
                     let officialBadge = document.createElement("span");
-                    officialBadge.innerText = "OFFICIAL";
+                    officialBadge.innerText = "COMMISSION";
                     officialBadge.className = "badge";
                     
                     postDetails.appendChild(document.createElement("br"))
