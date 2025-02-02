@@ -232,6 +232,21 @@ var designEntries = [
     }
 ]
 
+var techEntries = [
+    {
+        "title" : "High-Fidelity Wireframes for a Safety Watcher App",
+        "type" : "UI/UX",
+        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
+        "date" : "JANUARY 2025",
+        "cover" : "./images/Tech/SafetyPal/cover.png",
+        "modalID" : "safetyPal",
+        "images" : [
+            
+        ],
+        "url" : "https://www.figma.com/proto/V6zGE2DgeEI3cq80Itlcl7/SafetyPal?node-id=150-220",
+    }
+]
+
 var loading_strings = [
     "Dedma muna rito kase inaayos pa!",
     "Erm...",

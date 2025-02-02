@@ -74,6 +74,17 @@ function generateCards(cards, containerID, type) {
                 }
                 caption.appendChild(postDetails);
                 break;
+            
+            case "tech":
+                let postDeet = document.createElement("h6");
+                let officialBadge = document.createElement("span");
+                officialBadge.innerText = item.type;
+                officialBadge.className = "badge";
+
+                postDeet.appendChild(officialBadge);
+                
+                caption.appendChild(postDeet);
+                break;
         }
         
 
@@ -128,6 +139,7 @@ function generateCards(cards, containerID, type) {
 
 generateCards(renderEntries, "rendersContainer", "render");
 generateCards(designEntries, "designsContainer", "design");
+generateCards(techEntries, "techContainer", "tech");
 
 var word_counter = 0;   // tracks which word is to be displayed
 var i = 0;              // tracks number of letters in the display
