@@ -289,6 +289,21 @@ var designEntries = [
 
 var techEntries = [
     {
+        "title" : "[Portfolio] Bopie Studios",
+        "type" : ["UI/UX", "WEBSITE"],
+        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
+        "date" : "JANUARY 2025",
+        "cover" : "./images/Tech/BopieStudios/BopieStudios.png",
+        "modalID" : "bopieStudios",
+        "images" : [
+            
+        ],
+        "url" : {
+            "github":"https://github.com/pingu204/Bopie"
+        }
+
+    },
+    {
         "title" : "Automated Planner for Efficient Scheduling",
         "type" : ["UI/UX", "Prototype"],
         "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
