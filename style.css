@@ -1,41 +1,41 @@
 @font-face {
-    font-family: "PPEditorialNew";
-    src: url("fonts/PPEditorialNew-Ultralight.otf") format("opentype");
+    font-family: "PPRadioGrotesk";
+    src: url("fonts/PPRadioGrotesk-Ultralight.otf") format("opentype");
     font-weight: lighter;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "PPEditorialNew";
-    src: url("fonts/PPEditorialNew-UltralightItalic.otf") format("opentype");
+    font-family: "PPRadioGrotesk";
+    src: url("fonts/PPRadioGrotesk-UltralightItalic.otf") format("opentype");
     font-weight: lighter;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "PPEditorialNew";
-    src: url("fonts/PPEditorialNew-Ultralight.otf") format("opentype");
+    font-family: "PPRadioGrotesk";
+    src: url("fonts/PPRadioGrotesk-Regular.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "PPEditorialNew";
-    src: url("fonts/PPEditorialNew-Italic.otf") format("opentype");
+    font-family: "PPRadioGrotesk";
+    src: url("fonts/PPRadioGrotesk-Italic.otf") format("opentype");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "PPEditorialNew";
-    src: url("fonts/PPEditorialNew-Regular.otf") format("opentype");
+    font-family: "PPRadioGrotesk";
+    src: url("fonts/PPRadioGrotesk-Black.otf") format("opentype");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "PPEditorialNew";
-    src: url("fonts/PPEditorialNew-UltraboldItalic.otf") format("opentype");
+    font-family: "PPRadioGrotesk";
+    src: url("fonts/PPRadioGrotesk-BlackItalic.otf") format("opentype");
     font-weight: bold;
     font-style: italic;
 }
@@ -61,8 +61,8 @@ body {
     background-repeat: no-repeat;
     background-size: 300%;
     background-color: rgba(0,0,0,1);
-    font-family: "PPEditorialNew";
-    font-weight: lighter;
+    font-family: "PPRadioGrotesk";
+    /* font-weight: lighter; */
 }
 
 a {
@@ -355,7 +355,8 @@ img.logo:hover {
     text-align: center;
     grid-template-columns: 1fr;
     color:white;
-    font-family: "Work Sans";
+    font-weight: lighter;
+    font-size: 8pt;
 }
 
 .footer {

@@ -104,8 +104,8 @@ function generateCards(cards, containerID, type) {
                 switch(key) {
                     case "figma":
                         console.log(key);
-                        icon = document.createElement("span");
-                        icon.className = "gg--figma";
+                        icon = document.createElement("i");
+                        icon.className = "bi bi-cursor-fill";
                         externalLink.appendChild(icon);
                         break;
     

@@ -202,7 +202,7 @@ var designEntries = [
         ]
     },
     {
-        "title" : "PSHS-MC Senior Year Batch Shirt",
+        "title" : "PSHS-MC Senior Year Batch Shirt | A.Y. 20-21",
         "type" : "commission",
         "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
         "date" : "JANUARY 2025",
