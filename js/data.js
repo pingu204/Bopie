@@ -217,6 +217,59 @@ var designEntries = [
         ]
     },
     {
+        "title" : "Typography Poster Collection",
+        "type" : "",
+        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
+        "date" : "JANUARY 2025",
+        "cover" : "./images/Designs/Typography Posters/espresso_q.png",
+        "modalID" : "typographyPoster",
+        "images" : [
+            "./images/Designs/Typography Posters/espresso_q.png",
+            "./images/Designs/Typography Posters/email rant.png",
+            "./images/Designs/Typography Posters/glimpse.png",
+        ],
+        "url" : null,
+        "platforms": [
+            "photoshop"
+        ]
+    },
+    {
+        "title" : "Vector Illustrations Collection",
+        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
+        "type":"",
+        "date" : "JANUARY 2025",
+        "cover" : "./images/Designs/Vectors/rainy full.png",
+        "modalID" : "vector",
+        "images" : [
+            "./images/Designs/Vectors/rainy full.png",
+            "./images/Designs/Vectors/muon_color.png",
+            "./images/Designs/Vectors/haknyeon.png",
+            "./images/Designs/Vectors/yoohyeon.png",
+            "./images/Designs/Vectors/jennie.png",
+        ],
+        "url" : null,
+        "platforms": [
+            "illustrator"
+        ]
+    },
+    {
+        "title" : "PSHS-MC 'Ang Lagablab' School Paper Spreads | A.Y. 21-22",
+        "type" : "Orgwork",
+        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
+        "date" : "JANUARY 2025",
+        "cover" : "./images/Designs/Lagablab/cover.png",
+        "modalID" : "angLagablab",
+        "images" : [
+            "./images/Designs/Lagablab/B-1.png",
+            "./images/Designs/Lagablab/H-1.png",
+        ],
+        "url" : null,
+        "platforms": [
+            "indesign",
+            "photoshop"
+        ]
+    },
+    {
         "title" : "Leni-Kiko Jeepney Signs",
         "type" : "",
         "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
@@ -286,6 +339,9 @@ var intro_strings = [
     "Hi, I'm Bopie!",
     "Kumusta, ako si Bopie!",
     "안영! 나는 Bopie-입니다~",
-    "Hola, soy Bopie!",
-    "こんにちは、Bopie-です!"
+    "こんにちは、Bopie-です!",
+    "No, I can't speak Japanese",
+    "Or Korean . . .",
+    "I just focus on what I do best,",
+    "which is . . . yapping"
 ]

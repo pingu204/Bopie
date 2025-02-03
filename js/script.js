@@ -66,7 +66,7 @@ function generateCards(cards, containerID, type) {
                 
                 if (item.type != "") {
                     let officialBadge = document.createElement("span");
-                    officialBadge.innerText = "COMMISSION";
+                    officialBadge.innerText = item.type.toUpperCase();
                     officialBadge.className = "badge";
                     
                     postDetails.appendChild(document.createElement("br"))
