@@ -289,7 +289,37 @@ var designEntries = [
 
 var techEntries = [
     {
-        "title" : "CYBOT: A School Management Discord Bot",
+        "title" : "Automated Planner for Efficient Scheduling",
+        "type" : ["UI/UX", "Prototype"],
+        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
+        "date" : "JANUARY 2025",
+        "cover" : "./images/Tech/APES/cover.png",
+        "modalID" : "APES",
+        "images" : [
+            
+        ],
+        "url" : {
+            "figma":"https://www.figma.com/proto/ZcXqO41rcm8Vz7tT0wC7tG/%5BAPES%5D-Prototype-2.0?node-id=35-24&p=f&t=sZzvkSCiuVVqdc8q-0&scaling=scale-down&content-scaling=fixed&page-id=35%3A23&starting-point-node-id=35%3A24"
+        }
+
+    },
+    {
+        "title" : "Safety Pal: Your Partner in Fighting Crime",
+        "type" : ["UI/UX", "Branding", "Prototype"],
+        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
+        "date" : "JANUARY 2025",
+        "cover" : "./images/Tech/SafetyPal/cover.png",
+        "modalID" : "safetyPal",
+        "images" : [
+            
+        ],
+        "url" : {
+            "figma":"https://www.figma.com/proto/V6zGE2DgeEI3cq80Itlcl7/SafetyPal?node-id=150-220"
+        }
+
+    },
+    {
+        "title" : "Cybot: A School Management Discord Bot",
         "type" : ["Discord Bot", "Branding"],
         "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
         "date" : "JANUARY 2025",
@@ -308,21 +338,6 @@ var techEntries = [
         }
 
     },
-    {
-        "title" : "Safety Pal: Your Partner in Fighting Crime",
-        "type" : ["UI/UX", "Branding"],
-        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
-        "date" : "JANUARY 2025",
-        "cover" : "./images/Tech/SafetyPal/cover.png",
-        "modalID" : "safetyPal",
-        "images" : [
-            
-        ],
-        "url" : {
-            "figma":"https://www.figma.com/proto/V6zGE2DgeEI3cq80Itlcl7/SafetyPal?node-id=150-220"
-        }
-
-    }
 ]
 
 var loading_strings = [

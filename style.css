@@ -316,7 +316,11 @@ img.logo:hover {
 
 @keyframes logoFade {
     0% {opacity: 1;}
-    50% {opacity: 0.3; filter:blur(2px);}
+    50% {
+        opacity: 0.3;
+        filter:blur(2px);
+        transform: translateY(20px);
+    }
     100% {opacity:1;}
 }
 
