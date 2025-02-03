@@ -77,11 +77,14 @@ function generateCards(cards, containerID, type) {
             
             case "tech":
                 let postDeet = document.createElement("h6");
-                let officialBadge = document.createElement("span");
-                officialBadge.innerText = item.type;
-                officialBadge.className = "badge";
+                for (t of item.type) {
+                    let officialBadge = document.createElement("span");
+                    officialBadge.innerText = t.toUpperCase();
+                    officialBadge.className = "badge";
 
-                postDeet.appendChild(officialBadge);
+                    postDeet.appendChild(officialBadge);
+                }
+                
                 
                 caption.appendChild(postDeet);
                 break;
@@ -91,17 +94,52 @@ function generateCards(cards, containerID, type) {
         let postTitle = document.createElement("h3");
         postTitle.innerText = item.title;
         if (item.url) {
-            let externalLink = document.createElement("a");
-            externalLink.href = item.url;
-            externalLink.target = "_blank";
+            for (var key in item.url) {
+                //console.log(key);
+                var externalLink = document.createElement("a");
+                externalLink.href = item.url[key];
+                externalLink.target = "_blank";
+                let icon = null;
 
-            let icon = document.createElement("i");
-            icon.className = "bi bi-youtube";
-            externalLink.appendChild(icon);
+                switch(key) {
+                    case "figma":
+                        console.log(key);
+                        icon = document.createElement("span");
+                        icon.className = "gg--figma";
+                        externalLink.appendChild(icon);
+                        break;
+    
+                    case "youtube":
+                        console.log(key);
+                        icon = document.createElement("i");
+                        icon.className = "bi bi-youtube";
+                        externalLink.appendChild(icon);
+                        break;
 
-            postTitle.innerText += ' ';
-            postTitle.appendChild(externalLink);
+                    case "github":
+                        console.log(key);
+                        icon = document.createElement("i");
+                        icon.className = "bi bi-github";
+                        externalLink.appendChild(icon);
+                        break;
+
+                    case "docs":
+                        console.log(key);
+                        icon = document.createElement("i");
+                        icon.className = "bi bi-file-earmark-text-fill";
+                        externalLink.appendChild(icon);
+                        break;
+
+                }
+
+                console.log(icon);
+                
+                postTitle.innerText += ' ';
+                postTitle.appendChild(externalLink.cloneNode(true));
+                //postTitle.appendChild(externalLink);
+            }
         }
+        
 
         let postDescription = document.createElement("p");
         postDescription.innerText = item.description;
@@ -193,6 +231,6 @@ async function goType(id, strings) {
 
 // Loading Screen
 
-let preloader = document.getElementById("preloader")
+/* let preloader = document.getElementById("preloader")
 
-setTimeout(() => {preloader.style.display = "none";}, 5000);
+setTimeout(() => {preloader.style.display = "none";}, 5000); */

@@ -66,7 +66,9 @@ var renderEntries = [
         "cover" : "./images/2024/MSU_Swimsuit/swim-Cover.jpg",
         "modalID" : "msuSwimsuit",
         "images" : [],
-        "url" : "https://youtu.be/Rqi32rsisIA"
+        "url" : {
+            "youtube":"https://youtu.be/Rqi32rsisIA"
+        }
     },
     {
         "title" : "'Birds Of A Feather' Titlecard",
@@ -234,8 +236,28 @@ var designEntries = [
 
 var techEntries = [
     {
-        "title" : "High-Fidelity Wireframes for a Safety Watcher App",
-        "type" : "UI/UX",
+        "title" : "CYBOT: A School Management Discord Bot",
+        "type" : ["Discord Bot", "Branding"],
+        "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
+        "date" : "JANUARY 2025",
+        "cover" : "./images/Tech/Cybot/cover.png",
+        "modalID" : "cybot",
+        "images" : [
+            "./images/Tech/Cybot/final_logo.png",
+            "./images/Tech/Cybot/logo_showcase.png",
+            "./images/Tech/Cybot/poster.png",
+
+        ],
+        "url" : {
+            "github":"",
+            "figma":"https://docs.google.com/document/d/1jMqrCvDmOKzdc6_e7TRP0IrzIgxR5a3A0l2yUgKZHQw/edit?usp=sharing",
+            "docs":"https://docs.google.com/document/d/1jMqrCvDmOKzdc6_e7TRP0IrzIgxR5a3A0l2yUgKZHQw/edit?usp=sharing"
+        }
+
+    },
+    {
+        "title" : "Safety Pal: Your Partner in Fighting Crime",
+        "type" : ["UI/UX", "Branding"],
         "description" : "Regina Benitez showcases her final (white) and preliminary (black) evening gowns for the Miss Universe 2024 competition. The shoot takes inspiration from the music video of LISA's 'New Woman'.",
         "date" : "JANUARY 2025",
         "cover" : "./images/Tech/SafetyPal/cover.png",
@@ -243,7 +265,10 @@ var techEntries = [
         "images" : [
             
         ],
-        "url" : "https://www.figma.com/proto/V6zGE2DgeEI3cq80Itlcl7/SafetyPal?node-id=150-220",
+        "url" : {
+            "figma":"https://www.figma.com/proto/V6zGE2DgeEI3cq80Itlcl7/SafetyPal?node-id=150-220"
+        }
+
     }
 ]
 
