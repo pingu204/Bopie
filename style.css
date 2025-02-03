@@ -399,6 +399,10 @@ img.logo:hover {
     opacity: 0.5;
 }
 
+.modal-dialog {
+    max-width: 60vw;
+}
+
 @media only screen and (max-width:1000px) {
     .row.gallery, .row.contact, .row.overview {
         grid-template-columns: 1fr;
@@ -476,9 +480,7 @@ img.logo:hover {
 
 
 
-.modal-dialog {
-    max-width: 60vw;
-}
+
 
 .platform-icon {
     margin-right: 5px;
