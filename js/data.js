@@ -366,12 +366,14 @@ var loading_strings = [
 ]
 
 var intro_strings = [
-    "Hi, I'm Bopie!",
-    "Kumusta, ako si Bopie!",
-    "안영! 나는 Bopie-입니다~",
-    "こんにちは、Bopie-です!",
-    "No, I can't speak Japanese",
-    "Or Korean . . .",
-    "I just focus on what I do best,",
-    "which is . . . yapping"
+    "Kumusta, ako si Jopeth!",
+    "Some call me Bopeth,",
+    "which then became Bopie,",
+    "hence the birth of...",
+    "Bopie Studios!",
+    "People misspell it as Bopis,",
+    "a dish made of pigs' heart.",
+    "I guess I'm just that lovable",
+    "⸜(｡˃ ᵕ ˂ )⸝♡",
+    "..."
 ]

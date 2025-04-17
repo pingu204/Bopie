@@ -483,13 +483,14 @@ img.logo:hover {
     font-size: 10pt;
 }
 
-
-
-
-
 .platform-icon {
     margin-right: 5px;
 }
+/*
+
+Icons from Iconify
+
+*/
 
 .skill-icons--photoshop {
     display: inline-block;
