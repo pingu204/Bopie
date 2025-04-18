@@ -377,7 +377,7 @@ img.logo:hover {
 .footer p {
     margin: 0;
 }
-
+/* 
 .header {
     height: 10%;
     width:100%;
@@ -385,9 +385,9 @@ img.logo:hover {
     margin-bottom: 0;
     margin-right: 0;
     z-index: 100;
-}
+} */
 
-.header button {
+button.to-top {
     background: none;
     border-color: white;
     color: white;
@@ -395,12 +395,17 @@ img.logo:hover {
     border-radius: 10px;
     font-family: 'Work Sans';
     font-size: 10pt;
-    right:0; top:0;
+    /* right:0; top:0;
     position:absolute;
+    */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
     margin: 30px;
 }
 
-.header button:hover {
+button.to-top:hover {
     opacity: 0.5;
 }
 
@@ -419,6 +424,12 @@ img.logo:hover {
 
     .header {
         display: none;
+    }
+
+    button.to-top {
+        background: white;
+        border-color: black;
+        color: black;
     }
 
     /* .header button, .header button:hover {
